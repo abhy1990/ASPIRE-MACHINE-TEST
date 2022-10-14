@@ -45,3 +45,5 @@ Admin User details ::
 Customer Details ::  
  "email":"abhishek1@mailinator.com",
     "password":"Hunt@123"
+API Documentation is a postman collection which is saved in storage folder :: "Aspire.postman_collection.json"
+It can be imported to postman to see the APIs
