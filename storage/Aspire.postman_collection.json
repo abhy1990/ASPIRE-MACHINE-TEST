@@ -1,0 +1,456 @@
+{
+	"info": {
+		"_postman_id": "7ceff28e-3bc1-4547-be20-a7972c7781c9",
+		"name": "Aspire",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13749594"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Customer List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTY2MmM3NmU1ZDljMjIyNjFjMGY4MWE3ZTQ2ZGY3OGI3MDMzZGFmYWM1MmNlYjg0N2VmYmZhMmI3OTNjMGYzODk0MWY4ODM0MzgxMGM3NGQiLCJpYXQiOjE2NjU3ODE4NTguMjg5NzUzLCJuYmYiOjE2NjU3ODE4NTguMjg5NzU4LCJleHAiOjE2OTczMTc4NTguMjgxNDM2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gVMl5F0d6MWsM1zOa2Ut0gBWzkG0ROvvtZsfJEpsEp-i0lhQ0wikzPaHzVnSqELXe5bH7AY6O3z9IkUrkZ6k_oBF0VRB5DKewUCOf6pqsjtgd1scmizxOYEOhKrCYJ7jLW7IUcWON-XX1XObWq5hQq7mesjxi981g-IYzcQgNgsw_31Ug3h8no4VtNaGKb54JzWufWA3f8aKK7FRjgCM51MK1YSdxUxNeALvYokKEGyzUoplyHHBMMGQ1ac1Nbz7Qcb_16J9MmfG5yXxkqrVE6EUlQJfrZB3RsyEfBzIoZd3119y2HT1Tj9oX1RVYOxV7NqIwzvdKh1es0ynmyCxCHUaVR6VsGTZsWB4tYLD4EBZwMPxP5sTO6qlIkGbYTmHNqgeyFZqt_6J6poqAvJ9t5IraTU5TPuW4wqEDPpErYy6xmzYYiDojHz834FKwDgD2h8mlCZ2t51rmNw0C2iQOYiSE_1Q25YMLVFguGJgRnY2RnscG_1puz99JOkJ69sXL70o5-0pMKbOHy1Tdw6iXQGnCkASG9gevqIfZHH-uEID2GSdQiSlG-kZ9rpeVJaDU7S0W8X7vRpZO4aQ2z_vYRDXcijiTH-lgrwzraAFGsnIaeeZWdJWjOAJCiUFniKB-zDp6kBAQI-1CTkcFSSvPC3WEk8CCsnb8tTJEe3caP8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/customer/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"customer",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Loan Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTY2MmM3NmU1ZDljMjIyNjFjMGY4MWE3ZTQ2ZGY3OGI3MDMzZGFmYWM1MmNlYjg0N2VmYmZhMmI3OTNjMGYzODk0MWY4ODM0MzgxMGM3NGQiLCJpYXQiOjE2NjU3ODE4NTguMjg5NzUzLCJuYmYiOjE2NjU3ODE4NTguMjg5NzU4LCJleHAiOjE2OTczMTc4NTguMjgxNDM2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gVMl5F0d6MWsM1zOa2Ut0gBWzkG0ROvvtZsfJEpsEp-i0lhQ0wikzPaHzVnSqELXe5bH7AY6O3z9IkUrkZ6k_oBF0VRB5DKewUCOf6pqsjtgd1scmizxOYEOhKrCYJ7jLW7IUcWON-XX1XObWq5hQq7mesjxi981g-IYzcQgNgsw_31Ug3h8no4VtNaGKb54JzWufWA3f8aKK7FRjgCM51MK1YSdxUxNeALvYokKEGyzUoplyHHBMMGQ1ac1Nbz7Qcb_16J9MmfG5yXxkqrVE6EUlQJfrZB3RsyEfBzIoZd3119y2HT1Tj9oX1RVYOxV7NqIwzvdKh1es0ynmyCxCHUaVR6VsGTZsWB4tYLD4EBZwMPxP5sTO6qlIkGbYTmHNqgeyFZqt_6J6poqAvJ9t5IraTU5TPuW4wqEDPpErYy6xmzYYiDojHz834FKwDgD2h8mlCZ2t51rmNw0C2iQOYiSE_1Q25YMLVFguGJgRnY2RnscG_1puz99JOkJ69sXL70o5-0pMKbOHy1Tdw6iXQGnCkASG9gevqIfZHH-uEID2GSdQiSlG-kZ9rpeVJaDU7S0W8X7vRpZO4aQ2z_vYRDXcijiTH-lgrwzraAFGsnIaeeZWdJWjOAJCiUFniKB-zDp6kBAQI-1CTkcFSSvPC3WEk8CCsnb8tTJEe3caP8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loanID\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/loan/details",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"loan",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Loan List Based on customer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTY2MmM3NmU1ZDljMjIyNjFjMGY4MWE3ZTQ2ZGY3OGI3MDMzZGFmYWM1MmNlYjg0N2VmYmZhMmI3OTNjMGYzODk0MWY4ODM0MzgxMGM3NGQiLCJpYXQiOjE2NjU3ODE4NTguMjg5NzUzLCJuYmYiOjE2NjU3ODE4NTguMjg5NzU4LCJleHAiOjE2OTczMTc4NTguMjgxNDM2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.gVMl5F0d6MWsM1zOa2Ut0gBWzkG0ROvvtZsfJEpsEp-i0lhQ0wikzPaHzVnSqELXe5bH7AY6O3z9IkUrkZ6k_oBF0VRB5DKewUCOf6pqsjtgd1scmizxOYEOhKrCYJ7jLW7IUcWON-XX1XObWq5hQq7mesjxi981g-IYzcQgNgsw_31Ug3h8no4VtNaGKb54JzWufWA3f8aKK7FRjgCM51MK1YSdxUxNeALvYokKEGyzUoplyHHBMMGQ1ac1Nbz7Qcb_16J9MmfG5yXxkqrVE6EUlQJfrZB3RsyEfBzIoZd3119y2HT1Tj9oX1RVYOxV7NqIwzvdKh1es0ynmyCxCHUaVR6VsGTZsWB4tYLD4EBZwMPxP5sTO6qlIkGbYTmHNqgeyFZqt_6J6poqAvJ9t5IraTU5TPuW4wqEDPpErYy6xmzYYiDojHz834FKwDgD2h8mlCZ2t51rmNw0C2iQOYiSE_1Q25YMLVFguGJgRnY2RnscG_1puz99JOkJ69sXL70o5-0pMKbOHy1Tdw6iXQGnCkASG9gevqIfZHH-uEID2GSdQiSlG-kZ9rpeVJaDU7S0W8X7vRpZO4aQ2z_vYRDXcijiTH-lgrwzraAFGsnIaeeZWdJWjOAJCiUFniKB-zDp6kBAQI-1CTkcFSSvPC3WEk8CCsnb8tTJEe3caP8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerID\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/loan/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"loan",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Loan Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzQyYjQxZTQ4ZTU4YTUxYjkwMzVjZTU3MzQ1NGY3Njc4ZDVlM2I4ZDFmYTE3OTk2MjVkMWFhMjhkYjk1ODlmNDdmNjdlMTU5ZmE5ODE3ZmUiLCJpYXQiOjE2NjU3NzAyNDguNjEwOTc5LCJuYmYiOjE2NjU3NzAyNDguNjEwOTksImV4cCI6MTY5NzMwNjI0OC41NDkxNTIsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.472egWY52syUGU3Z68ssUrjH54xlL_GvJz9ACNYI1gfjzIhtX3P3WPjPy2wiO-k8tch8JFi7Nr9euBPzq5NKGhhQ44ruNT2Gn8obVZc6ryz6ZahykVzNIoPD66v-qWvB7PpsKy77wPuTzbNCqCEHdkv3izAN3ylwGwv8WkaX2ffJ_woqcoTtkgvH0KRC7vh1lwe6JtxhynRnI27S3hOwo3kEOWHoZxtmHpedjLvCG7HcHclpOCyk4p_MQHWQ6AJomHGgQJb4laok6dJd4wxuJrrNk9UXD3klQw0tr-Pegrg4FF_4sxX0N8P61XPDNKPV5buFESRQ8JgiqpKFS0xVbrEfF82mfgb1FAfdGqq12baJVzrRbQ90DHQugrlneuIiTDE-Dnu7hUlbi1BRU6gR753KpQrH6MPGYwGCxFb-mHBuj_WpNZXH53pthCj9d4C6FyH9q3RINupMX5LvDaKzVT_UtOatfGCe_W-FriLRwDPqYzJae5QR-7gWswooic5Zlnmj9fxBFcTFskI3ktZr9sG_zE-ApE5X9A0gA9YXnSjwe1EsVAbsGvj2Izur-vWG0BgKeLY30nI0NkIBYMxJ9-KQpWj6dYuacCtKHm4chteiFgliu1W-OmXPOb9XBygtopIg8fp7FSh_PxLqCPgVPK_SP4s2sgvfNpufVIsOpE8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loanID\":\"15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/loan/details?page=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"loan",
+								"details"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pay Recurring",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzQyYjQxZTQ4ZTU4YTUxYjkwMzVjZTU3MzQ1NGY3Njc4ZDVlM2I4ZDFmYTE3OTk2MjVkMWFhMjhkYjk1ODlmNDdmNjdlMTU5ZmE5ODE3ZmUiLCJpYXQiOjE2NjU3NzAyNDguNjEwOTc5LCJuYmYiOjE2NjU3NzAyNDguNjEwOTksImV4cCI6MTY5NzMwNjI0OC41NDkxNTIsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.472egWY52syUGU3Z68ssUrjH54xlL_GvJz9ACNYI1gfjzIhtX3P3WPjPy2wiO-k8tch8JFi7Nr9euBPzq5NKGhhQ44ruNT2Gn8obVZc6ryz6ZahykVzNIoPD66v-qWvB7PpsKy77wPuTzbNCqCEHdkv3izAN3ylwGwv8WkaX2ffJ_woqcoTtkgvH0KRC7vh1lwe6JtxhynRnI27S3hOwo3kEOWHoZxtmHpedjLvCG7HcHclpOCyk4p_MQHWQ6AJomHGgQJb4laok6dJd4wxuJrrNk9UXD3klQw0tr-Pegrg4FF_4sxX0N8P61XPDNKPV5buFESRQ8JgiqpKFS0xVbrEfF82mfgb1FAfdGqq12baJVzrRbQ90DHQugrlneuIiTDE-Dnu7hUlbi1BRU6gR753KpQrH6MPGYwGCxFb-mHBuj_WpNZXH53pthCj9d4C6FyH9q3RINupMX5LvDaKzVT_UtOatfGCe_W-FriLRwDPqYzJae5QR-7gWswooic5Zlnmj9fxBFcTFskI3ktZr9sG_zE-ApE5X9A0gA9YXnSjwe1EsVAbsGvj2Izur-vWG0BgKeLY30nI0NkIBYMxJ9-KQpWj6dYuacCtKHm4chteiFgliu1W-OmXPOb9XBygtopIg8fp7FSh_PxLqCPgVPK_SP4s2sgvfNpufVIsOpE8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loanId\":\"2\",\r\n    \"amount\":\"3.67\",\r\n    \"recurringID\":\"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/loan/pay-recurring",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"loan",
+								"pay-recurring"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Loans For Customers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzQyYjQxZTQ4ZTU4YTUxYjkwMzVjZTU3MzQ1NGY3Njc4ZDVlM2I4ZDFmYTE3OTk2MjVkMWFhMjhkYjk1ODlmNDdmNjdlMTU5ZmE5ODE3ZmUiLCJpYXQiOjE2NjU3NzAyNDguNjEwOTc5LCJuYmYiOjE2NjU3NzAyNDguNjEwOTksImV4cCI6MTY5NzMwNjI0OC41NDkxNTIsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.472egWY52syUGU3Z68ssUrjH54xlL_GvJz9ACNYI1gfjzIhtX3P3WPjPy2wiO-k8tch8JFi7Nr9euBPzq5NKGhhQ44ruNT2Gn8obVZc6ryz6ZahykVzNIoPD66v-qWvB7PpsKy77wPuTzbNCqCEHdkv3izAN3ylwGwv8WkaX2ffJ_woqcoTtkgvH0KRC7vh1lwe6JtxhynRnI27S3hOwo3kEOWHoZxtmHpedjLvCG7HcHclpOCyk4p_MQHWQ6AJomHGgQJb4laok6dJd4wxuJrrNk9UXD3klQw0tr-Pegrg4FF_4sxX0N8P61XPDNKPV5buFESRQ8JgiqpKFS0xVbrEfF82mfgb1FAfdGqq12baJVzrRbQ90DHQugrlneuIiTDE-Dnu7hUlbi1BRU6gR753KpQrH6MPGYwGCxFb-mHBuj_WpNZXH53pthCj9d4C6FyH9q3RINupMX5LvDaKzVT_UtOatfGCe_W-FriLRwDPqYzJae5QR-7gWswooic5Zlnmj9fxBFcTFskI3ktZr9sG_zE-ApE5X9A0gA9YXnSjwe1EsVAbsGvj2Izur-vWG0BgKeLY30nI0NkIBYMxJ9-KQpWj6dYuacCtKHm4chteiFgliu1W-OmXPOb9XBygtopIg8fp7FSh_PxLqCPgVPK_SP4s2sgvfNpufVIsOpE8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loanID\":\"15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/loan/list?page=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"loan",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzQyYjQxZTQ4ZTU4YTUxYjkwMzVjZTU3MzQ1NGY3Njc4ZDVlM2I4ZDFmYTE3OTk2MjVkMWFhMjhkYjk1ODlmNDdmNjdlMTU5ZmE5ODE3ZmUiLCJpYXQiOjE2NjU3NzAyNDguNjEwOTc5LCJuYmYiOjE2NjU3NzAyNDguNjEwOTksImV4cCI6MTY5NzMwNjI0OC41NDkxNTIsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.472egWY52syUGU3Z68ssUrjH54xlL_GvJz9ACNYI1gfjzIhtX3P3WPjPy2wiO-k8tch8JFi7Nr9euBPzq5NKGhhQ44ruNT2Gn8obVZc6ryz6ZahykVzNIoPD66v-qWvB7PpsKy77wPuTzbNCqCEHdkv3izAN3ylwGwv8WkaX2ffJ_woqcoTtkgvH0KRC7vh1lwe6JtxhynRnI27S3hOwo3kEOWHoZxtmHpedjLvCG7HcHclpOCyk4p_MQHWQ6AJomHGgQJb4laok6dJd4wxuJrrNk9UXD3klQw0tr-Pegrg4FF_4sxX0N8P61XPDNKPV5buFESRQ8JgiqpKFS0xVbrEfF82mfgb1FAfdGqq12baJVzrRbQ90DHQugrlneuIiTDE-Dnu7hUlbi1BRU6gR753KpQrH6MPGYwGCxFb-mHBuj_WpNZXH53pthCj9d4C6FyH9q3RINupMX5LvDaKzVT_UtOatfGCe_W-FriLRwDPqYzJae5QR-7gWswooic5Zlnmj9fxBFcTFskI3ktZr9sG_zE-ApE5X9A0gA9YXnSjwe1EsVAbsGvj2Izur-vWG0BgKeLY30nI0NkIBYMxJ9-KQpWj6dYuacCtKHm4chteiFgliu1W-OmXPOb9XBygtopIg8fp7FSh_PxLqCPgVPK_SP4s2sgvfNpufVIsOpE8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/get-user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"get-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Loan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzQyYjQxZTQ4ZTU4YTUxYjkwMzVjZTU3MzQ1NGY3Njc4ZDVlM2I4ZDFmYTE3OTk2MjVkMWFhMjhkYjk1ODlmNDdmNjdlMTU5ZmE5ODE3ZmUiLCJpYXQiOjE2NjU3NzAyNDguNjEwOTc5LCJuYmYiOjE2NjU3NzAyNDguNjEwOTksImV4cCI6MTY5NzMwNjI0OC41NDkxNTIsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.472egWY52syUGU3Z68ssUrjH54xlL_GvJz9ACNYI1gfjzIhtX3P3WPjPy2wiO-k8tch8JFi7Nr9euBPzq5NKGhhQ44ruNT2Gn8obVZc6ryz6ZahykVzNIoPD66v-qWvB7PpsKy77wPuTzbNCqCEHdkv3izAN3ylwGwv8WkaX2ffJ_woqcoTtkgvH0KRC7vh1lwe6JtxhynRnI27S3hOwo3kEOWHoZxtmHpedjLvCG7HcHclpOCyk4p_MQHWQ6AJomHGgQJb4laok6dJd4wxuJrrNk9UXD3klQw0tr-Pegrg4FF_4sxX0N8P61XPDNKPV5buFESRQ8JgiqpKFS0xVbrEfF82mfgb1FAfdGqq12baJVzrRbQ90DHQugrlneuIiTDE-Dnu7hUlbi1BRU6gR753KpQrH6MPGYwGCxFb-mHBuj_WpNZXH53pthCj9d4C6FyH9q3RINupMX5LvDaKzVT_UtOatfGCe_W-FriLRwDPqYzJae5QR-7gWswooic5Zlnmj9fxBFcTFskI3ktZr9sG_zE-ApE5X9A0gA9YXnSjwe1EsVAbsGvj2Izur-vWG0BgKeLY30nI0NkIBYMxJ9-KQpWj6dYuacCtKHm4chteiFgliu1W-OmXPOb9XBygtopIg8fp7FSh_PxLqCPgVPK_SP4s2sgvfNpufVIsOpE8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\":\"225.351\",\r\n    \"term\":\"15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/loan/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"loan",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvdXNlclwvbG9naW4iLCJpYXQiOjE2NTgzOTU4NDUsImV4cCI6MTY1ODQ4MjI0NSwibmJmIjoxNjU4Mzk1ODQ1LCJqdGkiOiIyWHo1UUlNb1V1OUZPeXc1Iiwic3ViIjo1LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.fBTzQ6lP8PpPZ-1Nxtx1Cn3l4PwuwHios4AAe5UJ6Z0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"abhishek1@mailinator.com\",\r\n    \"password\":\"Hunt@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvdXNlclwvbG9naW4iLCJpYXQiOjE2NTgzOTU4NDUsImV4cCI6MTY1ODQ4MjI0NSwibmJmIjoxNjU4Mzk1ODQ1LCJqdGkiOiIyWHo1UUlNb1V1OUZPeXc1Iiwic3ViIjo1LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.fBTzQ6lP8PpPZ-1Nxtx1Cn3l4PwuwHios4AAe5UJ6Z0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Abhishek\",\r\n    \"email\":\"abhishek1@mailinator.com\",\r\n    \"password\":\"Hunt@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
