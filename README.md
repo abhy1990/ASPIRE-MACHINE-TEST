@@ -38,3 +38,10 @@ For listing laravel paginate method used
 Accessors are used to manage the status each status details are commented in the database colums
 
 Authorization checking is done in each API
+
+Admin User details ::   
+  "email":"abhishek@mailinator.com",
+    "password":"Hunt@123"
+Customer Details ::  
+ "email":"abhishek1@mailinator.com",
+    "password":"Hunt@123"
